@@ -1,19 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manfaat Buah-Buahan"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="15pt"
+        android:layout_marginRight="15pt"
+        android:layout_marginTop="10pt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:textSize="12pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="10pt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mango"
+        android:textSize="12pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="5pt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banana"
+        android:textSize="12pt"
+        android:layout_marginLeft="20pt"
+        android:layout_marginRight="20pt"
+        android:layout_marginTop="5pt"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5pt"
+        android:layout_marginTop="10pt">
+
+        <ImageView
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:src="@drawable/apple"/>
+        <ImageView
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:src="@drawable/mango"/>
+        <ImageView
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:src="@drawable/banana"/>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Muhammad Zikri Nurromadhon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="5pt"
+        android:justificationMode="inter_word"
+        android:text="Manfaat Buah Apple: Buah apel bermanfaat untuk
+kesehatan jantung, menurunkan kolesterol, dan melancarkan pencernaan"
+        android:textSize="7pt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="5pt"
+        android:justificationMode="inter_word"
+        android:text="Manfaat Buah Mangga: Buah mangga kaya akan
+vitamin C, A, dan serat yang efektif meningkatkan daya tahan tubuh serta melancarkan pencernaan."
+        android:textSize="7pt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="5pt"
+        android:justificationMode="inter_word"
+        android:text="Manfaat Buah Pisang: Buah pisang merupakan
+sumber karbohidrat, kalium, dan vitamin B6 yang efektif sebagai penyedia energi instan dan penjaga fungsi saraf."
+        android:textSize="7pt"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
